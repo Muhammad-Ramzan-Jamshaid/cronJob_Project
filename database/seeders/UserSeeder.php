@@ -15,17 +15,17 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        User::create([
+        User::ipdateOrCreate([
            'name' => "Muhammad Ramzan jamshaid",
-           'Email'=> "jamshaidali8u@gmail.com",
+           'Email'=> "ramzanjamshiad8u@gmail.com",
             'password'=> bcrypt('password123')
         ]);
-        User::create([
+        User::updateOrCreate([
            'name' => "Manan Qureshi",
            'Email'=> "manansadiqi355@gmail.com",
             'password'=> bcrypt('password123')
         ]);
-        User::create([
+        User::updateOrCreate([
            'name' => "Muzamal Ashraf",
            'Email'=> "ashrafmuzzamal7@gmail.com",
             'password'=> bcrypt('password123')
